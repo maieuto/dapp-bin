@@ -88,7 +88,7 @@ contract WeiLend {
             // again assign to the loan l the category defined by the argument of the function
             l.category = _category;
             // again assign to the loan l the interest rate defined by the argument of the function
-            l.interestRateM = (1 - _interest_rate)^(1/12)-1;
+            l.interestRateM = (1 - _interest_rate)**(1/12)-1;
             // again assign to the loan l the grace period defined by the argument of the function
             l.gracePeriod = _grace_period_m * 43200;
             // again assign to the loan l the tenor defined by the argument of the function (note, tenor meant to be after grace period)
